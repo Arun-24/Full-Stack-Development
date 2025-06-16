@@ -1,0 +1,11 @@
+var a = 50;
+var b = 41;
+var c = 23;
+var d = 94;
+var e = 62;
+var sum = a+b+c+d+e;
+var sub = sum - 40;
+var mul = sub*30;
+console.log(sum);
+console.log(sub);
+console.log(mul);
