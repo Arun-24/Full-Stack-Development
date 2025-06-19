@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator, New Year Counter and Live Timer</title>
+    <link rel="stylesheet" href="timestyle.css">
+</head>
+<body>
+    <div class="content">
+      <h1 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(229, 229, 162) ;">Welcome to our website</h1>
+      <h2>Choose one of the options below and click the "Display" button</h2>
+
+      <form id="featureForm">
+        <label>
+          <input type="checkbox" name="feature" value="age"> Age Calculator
+        </label><br>
+
+        <label>
+          <input type="checkbox" name="feature" value="newyear"> New Year Counter
+        </label><br>
+
+        <label>
+          <input type="checkbox" name="feature" value="timer"> Live Timer
+        </label><br><br>
+
+        <button type="button" onclick="displayFeature()">Display</button>
+      </form>
+
+      <div id="output">
+        <!-- Age Calculator -->
+        <div id="ageCalculator" style="display:none;">
+          <h3 style="color: rgb(201, 201, 90);">Age Calculator</h3>
+          <label>Date of Birth: <input type="date" id="dob"></label><br>
+          <label>Time of Birth: <input type="time" id="tob"></label><br><br>
+          <button onclick="calculateAge()">Calculate Age</button>
+          <p id="ageResult"></p>
+        </div>
+
+        <!-- New Year Counter -->
+        <div id="newYearCounter" style="display:none;">
+          <h3 style="color: rgb(201, 201, 90);">New Year Countdown</h3>
+          <p id="timer"></p>
+          <p id="currentDate"></p>
+          <p id="newYearResult"></p>
+        </div>
+
+        <!-- Live Timer -->
+        <div id="liveTimer" style="display:none;">
+          <h3 style="color: rgb(201, 201, 90);">Live Timer</h3>
+          <p id="liveClock"></p>
+        </div>
+      </div>
+    </div>
+
+  <script src="timeCal.js"></script>
+</body>
+</html>
